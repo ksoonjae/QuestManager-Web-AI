@@ -4,18 +4,24 @@ Unity 게임 프로젝트에서 사용하던 NPC 퀘스트 시스템을 웹 서�
 
 ## 프로젝트 목표
 
-게임 내 퀘스트, NPC, 보상, 일일 할당량 시스템을 웹에서 관리할 수 있도록 만들고, AI를 활용해 퀘스트 생성과 설명을 보조하는 기능을 구현합니다.
+기존 Unity 기반 Quest/NPC/Reward 시스템을 웹 서비스 관점에서 재설계하고,  
+관리자 페이지와 AI 퀘스트 생성 기능을 추가하여 웹/AI 애플리케이션 개발 역량을 보여주는 것을 목표로 합니다.
 
-## 주요 기능 예정
+## 주요 기능
 
+### MVP 기능
 - NPC 관리
-- 퀘스트 생성 / 수정 / 삭제
-- 퀘스트 수락 / 완료 처리
-- 보상 관리
+- Quest 관리
+- Reward 관리
 - 일일 할당량 퀘스트 관리
+- 퀘스트 완료 처리
+- 보상 지급 처리
+
+### AI 확장 기능
 - AI 기반 퀘스트 설명 생성
 - AI 기반 보상 추천
-- 관리자 페이지
+- 퀘스트 난이도 자동 분류
+- NPC 성격에 맞는 대사 생성
 
 ## 기술 스택 예정
 
@@ -37,7 +43,15 @@ Unity 게임 프로젝트에서 사용하던 NPC 퀘스트 시스템을 웹 서�
 ```txt
 quest-manager-web-ai/
 ├── README.md
+├── .gitignore
 ├── docs/
+│   ├── planning.md
+│   ├── features.md
+│   ├── database.md
+│   ├── api.md
+│   └── troubleshooting.md
 ├── frontend/
 ├── backend/
 └── assets/
+    ├── screenshots/
+    └── diagrams/
